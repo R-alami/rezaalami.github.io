@@ -1,0 +1,115 @@
+/* .card {
+    width: 500px;
+    max-width: 100%;
+    overflow: hidden;
+    background-size: cover;
+}
+ */
+
+.info {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+    transform: translateY(100%) translateY(-88px) translateZ(0);
+    transition: transform 0.5s ease-out;
+}
+
+.info:before {
+    z-index: -999;
+    display: block;
+    position: absolute;
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    filter: blur(10px);
+    background-size: cover;
+    opacity: 0.25;
+    transform: translateY(-100%) translateY(88px) translateZ(0);
+    transition: transform 0.5s ease-out;
+}
+
+.card:hover .info, .card:hover .info:before {
+    transform: translateY(0) translateZ(0);
+}
+
+.title {
+    margin: 0;
+    padding: 10px 24px 0 24px;
+    font-size: 30px;
+    line-height: 1;
+    color: #FFF;
+}
+
+.others {
+    color: rgba(65, 64, 64, 0.87);
+}
+
+.description {
+    margin: 0;
+    padding: 0 24px 24px;
+    font-size: 30px;
+    line-height: 1.5;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.logos i {
+    font-size: 50px;
+    margin: 5px;
+}
+
+.logos img {
+    width: 45px;
+    height: 45px;
+    margin: 5px;
+}
+
+.nodejs {
+    width: 70px !important;
+}
+
+.expressjs, .mongo {
+    width: 150px !important;
+    margin: 5px;
+    /* height: 45px !important; */
+}
+
+.fa-html5 {
+    color: #e34f26;
+}
+
+.fa-css3 {
+    color: #1572b6;
+}
+
+.fa-sass {
+    color: #dd6095;
+}
+
+.fa-less {
+    color: #5A3E7B;
+}
+
+.fa-react {
+    color: #61dafb;
+}
+
+.fa-js-square {
+    color: #f5d931;
+}
+
+.mongoose {
+    color: #990000;
+    font-size: 35px !important;
+    margin-top: 10px;
+}
+
+.fa-wordpress {
+    color: #007194;
+}
